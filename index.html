@@ -1,12 +1,291 @@
 <!DOCTYPE html>
-<html lang="en" theme="light">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B9A3-HOCKEY</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <style>
+        .font-Manrope {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'theme-color': '#FF4240',
+                        'body-text-color': '#13131899',
+
+
+
+                    }
+                }
+            }
+        }
+    </script>
+
 </head>
-<body>
-    
+
+<body class="font-Manrope">
+
+    <header class="md:container md:mx-auto">
+
+        <!-- navigation -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a class="text-theme-color">Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-2xl font-bold lg:text-4xl">Hockey<span
+                            class="text-theme-color">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="text-theme-color">Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="navbar-end">
+
+                    <button class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                    </button>
+
+                    <a class="btn bg-theme-color text-white text-xl">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
+
+        <section class="my-24">
+
+            <!-- carousel -->
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="Images/2.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="Images/3.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+    </header>
+
+    <main>
+
+    <hr style="border: 1px dotted #13131833 ; margin:  40px;">
+
+    <!-- Professional Hockeys Club -->
+
+    <section class="my-24">
+
+
+
+        <div class="p-4">
+            <h3 class="text-5xl mb-12 font-bold text-center">Professional Hockeys Club</h3>
+
+            <p class="text-xl text-body-text-color text-center">Dit amet consectetur. Condimentum dignissim
+                adipiscing aliquam turpis placerat dolor. Purus urna in
+                sit nullam proin. </p>
+        </div>
+
+    </section>
+
+    <hr style="border: 1px dotted #13131833 ; margin:  40px;">
+
+    <!-- Progress -->
+
+    <section class="my-24">
+
+        <div class="grid grid-cols-1 px-4 lg:grid-cols-4 ">
+
+
+
+            <div class="card  gap-4  ">
+
+                <div class="card-body items-center text-center">
+                    <div class="radial-progress text-red-600 " style="--value:87;" role="progressbar"> <span
+                            class=" font-bold text-black ">87%</span> </div>
+                    <h2 class="card-title text-2xl font-bold">Prayer Facility</h2>
+                    <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+
+                </div>
+            </div>
+            <div class="card ">
+
+                <div class="card-body items-center text-center">
+                    <div class="radial-progress text-green-400 " style="--value:95;" role="progressbar"> <span
+                            class=" font-bold text-black ">95%</span> </div>
+                    <h2 class="card-title text-2xl font-bold">Experienced Coach</h2>
+                    <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+
+                </div>
+            </div>
+            <div class="card  ">
+
+                <div class="card-body items-center text-center">
+                    <div class="radial-progress text-yellow-500 " style="--value:90;" role="progressbar"><span
+                            class=" font-bold text-black ">90%</span></div>
+                    <h2 class="card-title text-2xl font-bold">Senior Player</h2>
+                    <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+
+                </div>
+            </div>
+            <div class="card ">
+
+                <div class="card-body items-center text-center">
+                    <div class="radial-progress text-blue-500 " style="--value:80;" role="progressbar"><span
+                            class=" font-bold text-black ">80%</span></div>
+                    <h2 class="card-title text-2xl font-bold">Training Ground</h2>
+                    <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <hr style="border: 1px dotted #13131833 ; margin:  40px;">
+
+    <!-- Program Sections -->
+
+    <section class="my-24">
+        <div class="p-4">
+            <h3 class="text-5xl mb-12 font-bold text-center">Program Sections</h3>
+
+            <p class="text-xl text-body-text-color text-center">Dit amet consectetur. Condimentum dignissim
+                adipiscing aliquam turpis placerat dolor. Purus urna in
+                sit nullam proin. </p>
+        </div>
+
+    </section>
+
+    <hr style="border: 1px dotted #13131833 ; margin:  40px;">
+
+    <!-- Program images Sections  -->
+
+    <section class="my-24">
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+
+            <div class="card max-w-96 bg-base-100 shadow-xl image-full ">
+                <figure><img src="Images/2.png" alt="" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Junior Program</h2>
+                    <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue
+                        sed et
+                        in.</p>
+                    <div class="card-actions justify-start">
+                        <button class="btn bg-theme-color text-white">Register Now!</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card max-w-96 bg-base-100 shadow-xl image-full ">
+                <figure><img src="Images/3.png" alt="" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Junior Program</h2>
+                    <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue
+                        sed et
+                        in.</p>
+                    <div class="card-actions justify-start">
+                        <button class="btn bg-theme-color text-white">Register Now!</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card max-w-96 bg-base-100 shadow-xl image-full ">
+                <figure><img src="Images/4.png" alt="" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Junior Program</h2>
+                    <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue
+                        sed et
+                        in.</p>
+                    <div class="card-actions justify-start">
+                        <button class="btn bg-theme-color text-white">Register Now!</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <hr style="border: 1px dotted #13131833 ; margin:  40px;">
+
+    <section class="my-24">
+        <div class="p-4">
+            <h3 class=" text-3xl lg:text-5xl mb-12 font-bold text-center">Our New Products</h3>
+
+            <p class="text-xl text-body-text-color text-center">Dit amet consectetur. Condimentum dignissim adipiscing
+                aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+        </div>
+
+    </section>
+
+    <hr style="border: 1px dotted #13131833 ; margin:  40px;">
+
+   
+
+    </main>
+
+    <footer>
+
+    </footer>
+
 </body>
+
 </html>
