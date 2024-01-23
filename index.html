@@ -28,6 +28,11 @@
                         'theme-color': '#FF4240',
                         'body-text-color': '#13131899',
                         'footer-bg-color': '#131318',
+                        'input-bg': '#13131808',
+                        'phone-bg-color': 'rgba(188, 237, 109, 0.10)',
+                        'email-bg-color': 'rgba(253, 221, 95, 0.10)',
+                        'location-bg-color': 'rgba(98, 156, 243, 0.10)',
+
 
 
 
@@ -90,10 +95,12 @@
                 </div>
             </div>
         </nav>
+        
 
         <section class="my-24">
 
             <!-- carousel -->
+           
             <div class="carousel w-full">
                 <div id="slide1" class="carousel-item relative w-full">
                     <img src="Images/1.png" class="w-full" />
@@ -110,16 +117,24 @@
                     </div>
                 </div>
                 <div id="slide3" class="carousel-item relative w-full">
+
                     <img src="Images/3.png" class="w-full" />
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide2" class="btn btn-circle">❮</a>
                         <a href="#slide1" class="btn btn-circle">❯</a>
                     </div>
                 </div>
+                
             </div>
+           
 
-        </section>
 
+        </div>
+            
+        
+        
+
+    </section>
 
     </header>
 
@@ -217,57 +232,55 @@
         <hr style="border: 1px dotted #13131833 ; margin:  40px;">
 
         <!-- Program images Sections  -->
+        <section class="my-24 flex flex-col lg:flex-row">
+            <div class="grid gap-8 p-5 grid-cols-1 lg:grid-cols-2 flex-1">
 
-        <section class="my-24">
-
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
-
-                <div class="card max-w-96 bg-base-100 shadow-xl image-full ">
-                    <figure><img src="Images/2.png" alt="" /></figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Junior Program</h2>
+                <div class="card  bg-base-100 shadow-xl image-full  lg:space-y-36 ">
+                    <figure><img class="w-full " src="Images/2.png" alt="Shoes" /></figure>
+                    <div class="card-body lg:m-10  ">
+                        <h2 class="card-title ">Junior Program</h2>
                         <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
                             enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
-                            congue
-                            sed et
-                            in.</p>
+                            congue sed et in.</p>
                         <div class="card-actions justify-start">
-                            <button class="btn bg-theme-color text-white">Register Now!</button>
+                            <button class="btn bg-theme-color text-white border-none ">Register Now!</button>
                         </div>
                     </div>
                 </div>
-                <div class="card max-w-96 bg-base-100 shadow-xl image-full ">
-                    <figure><img src="Images/3.png" alt="" /></figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Junior Program</h2>
+                <div class="card  bg-base-100 shadow-xl image-full lg:space-y-36">
+                    <figure><img src="Images/3.png" alt="Shoes" /></figure>
+                    <div class="card-body lg:m-10 ">
+                        <h2 class="card-title">Teenager Program</h2>
                         <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
                             enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
-                            congue
-                            sed et
-                            in.</p>
+                            congue sed et in.</p>
                         <div class="card-actions justify-start">
-                            <button class="btn bg-theme-color text-white">Register Now!</button>
+                            <button class="btn bg-theme-color text-white border-none">Register Now!</button>
                         </div>
                     </div>
                 </div>
-                <div class="card max-w-96 bg-base-100 shadow-xl image-full ">
-                    <figure><img src="Images/4.png" alt="" /></figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Junior Program</h2>
-                        <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
-                            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
-                            congue
-                            sed et
-                            in.</p>
-                        <div class="card-actions justify-start">
-                            <button class="btn bg-theme-color text-white">Register Now!</button>
+                <div class="lg:col-span-2 row-span-2 ">
+                    <div class="card bg-base-100 shadow-xl image-full lg:space-y-64  ">
+                        <figure><img class="w-full" src="Images/4.png" alt="Shoes" /></figure>
+                        <div class="card-body lg:m-20 ">
+                            <h2 class="card-title">Professional Program</h2>
+                            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                                enim sagittis turpis in magna. Id et sed <br> euismod natoque amet nunc morbi nulla.
+                                Tortor
+                                congue sed et in.</p>
+                            <div class="card-actions justify-start">
+                                <button class="btn bg-theme-color text-white border-none">Register Now!</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-
             </div>
 
+
+            </div>
         </section>
+
+
 
         <hr style="border: 1px dotted #13131833 ; margin:  40px;">
 
@@ -618,7 +631,83 @@
         <hr style="border: 1px dotted #13131833 ; margin:  40px;">
 
         <!-- Get In Touch form -->
+
         <section class="my-24">
+
+            <div class="grid grid-rows-1 lg:grid-rows-3 grid-flow-col gap-4">
+                <div class="row-span-1 lg:row-span-3 p-5 border  rounded-2xl">
+                    <div class="bg-phone-bg-color p-5 my-4 border-phone-bg-color  rounded-2xl  ">
+                        <img src="Images/Group 1171275317.png " alt="">
+                        <p>Phone Number : <br>
+                            (+62) 123-321-543</p>
+                    </div>
+
+                    <div class="bg-email-bg-color p-5 my-4 border-email-bg-color  rounded-2xl">
+                        <img src="Images/Group 1171275318.png " alt="">
+                        <p>Email : <br>
+                            hockeys@support.com </p>
+                    </div>
+
+                    <div class="bg-location-bg-color p-5 my-4 border-location-bg-color  rounded-2xl">
+                        <img src="Images/Group 1171275321.png " alt="">
+                        <p>Location : <br>
+                            152/1 Mohakhali Wireless Gate </p>
+                    </div>
+                </div>
+
+                <div class="row-span-1 lg:col-span-2 ... bg-white">
+                    <div class="flex  gap-2">
+                        <div class="form-control w-full max-w-sm ">
+                            <div class="label">
+                                <span class="label-text text-xl font-bold">Your Name</span>
+                            </div>
+                            <input type="text" placeholder="Enter your full name"
+                                class="input input-bordered bg-input-bg  w-full max-w-sm" />
+                        </div>
+                        <div class="form-control w-full max-w-sm">
+                            <div class="label">
+                                <span class="label-text text-xl font-bold">Your Email</span>
+                            </div>
+                            <input type="text" placeholder="Enter your email"
+                                class="input input-bordered bg-input-bg  w-full max-w-sm" />
+                        </div>
+                    </div>
+                    <div class="flex gap-2">
+                        <div class="form-control w-full max-w-sm">
+                            <div class="label">
+                                <span class="label-text text-xl font-bold">Subject</span>
+                            </div>
+                            <input type="text" placeholder="Enter your subject"
+                                class="input input-bordered bg-input-bg  w-full max-w-sm" />
+                        </div>
+                        <div class="form-control w-full max-w-sm">
+                            <div class="label">
+                                <span class="label-text text-xl font-bold">Phone Number</span>
+                            </div>
+                            <input type="text" placeholder="Enter your phone number"
+                                class="input input-bordered bg-input-bg  w-full max-w-sm" />
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row-span-2 col-span-2 ... ">
+                    <span class="label-text text-xl font-bold">Subject</span>
+
+                    <div class="flex bg-orange-100 gap-2">
+
+                        <div class="form-control w-full max-w-sm">
+                            <div class="label">
+                                <span class="label-text text-xl font-bold">Subject</span>
+                            </div>
+                            <input type="text" placeholder="Enter your subject"
+                                class="input input-bordered bg-input-bg  w-full max-w-sm" />
+                        </div>
+
+                    </div>
+                    <button class="btn bg-theme-color text-white">Register Now!</button>
+
+                </div>
+            </div>
 
         </section>
 
@@ -651,43 +740,44 @@
 
 
     <footer class="md:container md:mx-auto">
-        <div class="footer p-12 lg:p-10 bg-slate-900 text-white"> 
-        <aside>
-            <img class="h-28  w-28  " src="Images/hockey-logo-1.png" alt="">
-            <p>Dit amet consectetur. Condimentum adipiscing aliquam <br> turpis placerat dolor. Purus urna in sit nullam
-                proin.</p>
+        <div class="footer p-12 lg:p-10 bg-footer-bg-color text-white">
+            <aside>
+                <img class="h-28  w-28  " src="Images/hockey-logo.png" alt="">
+                <p>Dit amet consectetur. Condimentum adipiscing aliquam <br> turpis placerat dolor. Purus urna in sit
+                    nullam
+                    proin.</p>
 
-            <div>
-                <p>hockeys@support.com</p>
-                <p>(+62) 123-321-543</p>
-            </div>
-        </aside> 
-        <nav>
-            <header class="footer-title">Company</header>
-            <a class="link link-hover">About us</a>
-            <a class="link link-hover">Leadership</a>
-            <a class="link link-hover">Careers</a>
-            <a class="link link-hover">News & Article</a>
-            <a class="link link-hover">Legal Notice</a>
-        </nav> 
-        <nav>
-            <header class="footer-title">Support</header>
-            <a class="link link-hover">Help Center </a>
-            <a class="link link-hover">FAQ </a>
-            <a class="link link-hover">Ticket Support </a>
-            <a class="link link-hover">Contact Us</a>
-        </nav> 
-        <nav>
-            <header class="footer-title">Services</header>
-            <a class="link link-hover">Academy</a>
-            <a class="link link-hover">Group Lesson</a>
-            <a class="link link-hover">Private Lesson</a>
-            <a class="link link-hover">Hockeys for kids</a>
-            <a class="link link-hover">Hockeys for Adult</a>
-        </nav>
+                <div>
+                    <p>hockeys@support.com</p>
+                    <p>(+62) 123-321-543</p>
+                </div>
+            </aside>
+            <nav>
+                <header class="footer-title">Company</header>
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Leadership</a>
+                <a class="link link-hover">Careers</a>
+                <a class="link link-hover">News & Article</a>
+                <a class="link link-hover">Legal Notice</a>
+            </nav>
+            <nav>
+                <header class="footer-title">Support</header>
+                <a class="link link-hover">Help Center </a>
+                <a class="link link-hover">FAQ </a>
+                <a class="link link-hover">Ticket Support </a>
+                <a class="link link-hover">Contact Us</a>
+            </nav>
+            <nav>
+                <header class="footer-title">Services</header>
+                <a class="link link-hover">Academy</a>
+                <a class="link link-hover">Group Lesson</a>
+                <a class="link link-hover">Private Lesson</a>
+                <a class="link link-hover">Hockeys for kids</a>
+                <a class="link link-hover">Hockeys for Adult</a>
+            </nav>
 
-    </div>
-      </footer>
+        </div>
+    </footer>
 
 </body>
 
