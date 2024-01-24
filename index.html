@@ -95,12 +95,13 @@
                 </div>
             </div>
         </nav>
-        
+
+
+        <!-- carousel -->
+
 
         <section class="my-24">
 
-            <!-- carousel -->
-           
             <div class="carousel w-full">
                 <div id="slide1" class="carousel-item relative w-full">
                     <img src="Images/1.png" class="w-full" />
@@ -124,17 +125,10 @@
                         <a href="#slide1" class="btn btn-circle">❯</a>
                     </div>
                 </div>
-                
+
             </div>
-           
 
-
-        </div>
-            
-        
-        
-
-    </section>
+        </section>
 
     </header>
 
@@ -634,8 +628,10 @@
 
         <section class="my-24">
 
-            <div class="grid grid-rows-1 lg:grid-rows-3 grid-flow-col gap-4">
-                <div class="row-span-1 lg:row-span-3 p-5 border  rounded-2xl">
+           <div class="grid gap-4 grid-cols-1 lg:grid-cols-3 ">
+
+            
+                <div class="lg:row-span-4 px-4 border  rounded-2xl">
                     <div class="bg-phone-bg-color p-5 my-4 border-phone-bg-color  rounded-2xl  ">
                         <img src="Images/Group 1171275317.png " alt="">
                         <p>Phone Number : <br>
@@ -655,59 +651,57 @@
                     </div>
                 </div>
 
-                <div class="row-span-1 lg:col-span-2 ... bg-white">
-                    <div class="flex  gap-2">
-                        <div class="form-control w-full max-w-sm ">
-                            <div class="label">
-                                <span class="label-text text-xl font-bold">Your Name</span>
-                            </div>
-                            <input type="text" placeholder="Enter your full name"
-                                class="input input-bordered bg-input-bg  w-full max-w-sm" />
+                <div class=" px-4">
+                    <div class="form-control w-full max-w-sm ">
+                        <div class="label">
+                            <span class="label-text text-xl font-bold">Your Name</span>
                         </div>
-                        <div class="form-control w-full max-w-sm">
-                            <div class="label">
-                                <span class="label-text text-xl font-bold">Your Email</span>
-                            </div>
-                            <input type="text" placeholder="Enter your email"
-                                class="input input-bordered bg-input-bg  w-full max-w-sm" />
-                        </div>
+                        <input type="text" placeholder="Enter your full name"
+                            class="input input-bordered bg-input-bg  w-full max-w-sm" />
                     </div>
-                    <div class="flex gap-2">
-                        <div class="form-control w-full max-w-sm">
-                            <div class="label">
-                                <span class="label-text text-xl font-bold">Subject</span>
-                            </div>
-                            <input type="text" placeholder="Enter your subject"
-                                class="input input-bordered bg-input-bg  w-full max-w-sm" />
+                    <div class="form-control w-full max-w-sm">
+                        <div class="label">
+                            <span class="label-text text-xl font-bold">Your Email</span>
                         </div>
-                        <div class="form-control w-full max-w-sm">
-                            <div class="label">
-                                <span class="label-text text-xl font-bold">Phone Number</span>
-                            </div>
-                            <input type="text" placeholder="Enter your phone number"
-                                class="input input-bordered bg-input-bg  w-full max-w-sm" />
-                        </div>
+                        <input type="text" placeholder="Enter your email"
+                            class="input input-bordered bg-input-bg  w-full max-w-sm" />
                     </div>
-
                 </div>
-                <div class="row-span-2 col-span-2 ... ">
-                    <span class="label-text text-xl font-bold">Subject</span>
 
-                    <div class="flex bg-orange-100 gap-2">
-
-                        <div class="form-control w-full max-w-sm">
-                            <div class="label">
-                                <span class="label-text text-xl font-bold">Subject</span>
-                            </div>
-                            <input type="text" placeholder="Enter your subject"
-                                class="input input-bordered bg-input-bg  w-full max-w-sm" />
+                <div class="px-4">
+                    <div class="form-control w-full max-w-sm">
+                        <div class="label">
+                            <span class="label-text text-xl font-bold">Subject</span>
                         </div>
-
+                        <input type="text" placeholder="Enter your subject"
+                            class="input input-bordered bg-input-bg  w-full max-w-sm" />
                     </div>
-                    <button class="btn bg-theme-color text-white">Register Now!</button>
-
+                    <div class="form-control w-full max-w-sm">
+                        <div class="label">
+                            <span class="label-text text-xl font-bold">Phone Number</span>
+                        </div>
+                        <input type="text" placeholder="Enter your phone number"
+                            class="input input-bordered bg-input-bg  w-full max-w-sm" />
+                    </div>
                 </div>
-            </div>
+
+                <div class="px-4 lg:col-span-2 row-span-2  ">
+                    <div class="form-control  lg:col-span-2 ">
+                        <div class="label">
+                            <span class="label-text text-xl font-bold">Message</span>
+                        </div >
+                       
+                         <input type="text" placeholder="Write your message"
+                            class="input placeholder: input-bordered bg-input-bg h-48 p-2 placeholder-top   " />
+                    <div></div>
+                            
+                    
+                </div>
+                <div class=" p-2 lg:col-span-2 mt-4  ">
+                    <button class="btn bg-theme-color w-full text-white border-none">Register Now!</button>
+                </div>
+
+             </div>
 
         </section>
 
@@ -716,7 +710,7 @@
 
         <section class="my-24">
 
-            <div class="place-items-center ">
+            <div class="place-items-center p-4 ">
                 <div class="card bg-base-200 ">
                     <div class="card-body items-center text-center">
 
@@ -752,29 +746,31 @@
                     <p>(+62) 123-321-543</p>
                 </div>
             </aside>
-            <nav>
-                <header class="footer-title">Company</header>
-                <a class="link link-hover">About us</a>
-                <a class="link link-hover">Leadership</a>
-                <a class="link link-hover">Careers</a>
-                <a class="link link-hover">News & Article</a>
-                <a class="link link-hover">Legal Notice</a>
-            </nav>
-            <nav>
-                <header class="footer-title">Support</header>
-                <a class="link link-hover">Help Center </a>
-                <a class="link link-hover">FAQ </a>
-                <a class="link link-hover">Ticket Support </a>
-                <a class="link link-hover">Contact Us</a>
-            </nav>
-            <nav>
+          
+                <div>
+                    <header class="footer-title">Company</header>
+                    <a class="link link-hover">About us</a>
+                    <a class="link link-hover">Leadership</a>
+                    <a class="link link-hover">Careers</a>
+                    <a class="link link-hover">News & Article</a>
+                    <a class="link link-hover">Legal Notice</a>
+                </div>
+                <div>
+                    <header class="footer-title">Support</header>
+                    <a class="link link-hover">Help Center </a>
+                    <a class="link link-hover">FAQ </a>
+                    <a class="link link-hover">Ticket Support </a>
+                    <a class="link link-hover">Contact Us</a>
+                </div>
+           
+            <div>
                 <header class="footer-title">Services</header>
                 <a class="link link-hover">Academy</a>
                 <a class="link link-hover">Group Lesson</a>
                 <a class="link link-hover">Private Lesson</a>
                 <a class="link link-hover">Hockeys for kids</a>
                 <a class="link link-hover">Hockeys for Adult</a>
-            </nav>
+            </div>
 
         </div>
     </footer>
